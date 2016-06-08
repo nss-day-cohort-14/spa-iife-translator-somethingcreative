@@ -1,1 +1,0 @@
-# spa-iife-translator-somethingcreative
