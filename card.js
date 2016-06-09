@@ -2,7 +2,6 @@
 
     //placing element for the translated text into a variable
     var translatedTextLocation = document.getElementById("translatedText");
-    var translatedText = "";
 
 
 
@@ -10,7 +9,7 @@
     return {
         translate: function(text) {
             translatedText = text;
-            translatedTextLocation.innerHTML = translatedText;
+            translatedTextLocation.innerHTML += translatedText + ' ';
         }
     }
 

@@ -8,12 +8,11 @@ var Card = (function (spanishCard){
   };
 
   spanishCard.translateToSpanish = function (array) {
-    text = ''
-    space = " "
+    var text = '';
     for (i = 0; i < array.length; i++) {
-      text += spanish[array[i]] += space;
+      text = spanish[array[i]];
+      Card.translate(text);
     }
-    Card.translate(text);
   }
 
   return spanishCard;
