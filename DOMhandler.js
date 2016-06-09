@@ -1,4 +1,4 @@
-var button = document.getElementById('translateButton').addEventListener("click", buildString);
+var button = document.getElementById('button').addEventListener("click", buildString);
 var input = document.getElementById('inputText');
 var select = document.getElementById('select');
 var stringArray;
