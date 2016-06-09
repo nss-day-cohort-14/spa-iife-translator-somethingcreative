@@ -6,9 +6,13 @@ var Card = (function (spanishCard){
     return spanish;
   };
 
-  spanishCard.translateToSpanish = function (userText) {
-    text = spanish[userText]
-    Card.translate(text)
+  spanishCard.translateToSpanish = function (array) {
+    text = ''
+    space = " "
+    for (i = 0; i < array.length; i++) {
+      text += spanish[array[i]] += space;
+    }
+    Card.translate(text);
   }
 
   return spanishCard;
