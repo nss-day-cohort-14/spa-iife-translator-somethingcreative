@@ -4,9 +4,17 @@ var Card = (function(portuguese) {
 	
 	//message object with english/portuguese translations
 	var message = {
+		"merry": "alegre",
+		"christmas": "natal",
+		"and": "e",
+		"a": "uma",
+		"happy": "feliz",
+		"new": "novo",
+		"year": "ano",
 		"Merry": "Alegre",
 		"Christmas": "Natal",
-		"and": "e",
+		"And": "E",
+		"A": "Uma",
 		"Happy": "Feliz",
 		"New": "Novo",
 		"Year": "Ano"
@@ -22,13 +30,14 @@ var Card = (function(portuguese) {
 	 	};
 
 	 	//add key values to translatedText
-	 	portuguese.addTranslatedText = function() {
-	 		for (var key in message) {
-	 			translatedText += (message[key]) + " ";
-	 		}
-
-	 		return translatedText;
-	 	};
+  portuguese.translateToPortuguese = function (array) {
+    text = ''
+    space = " "
+    for (i = 0; i < array.length; i++) {
+      text += message[array[i]] += space;
+    }
+    Card.translate(text);
+  }
 
 	 return portuguese;
 	
