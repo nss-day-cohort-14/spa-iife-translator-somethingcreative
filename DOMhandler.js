@@ -1,4 +1,5 @@
 var button = document.getElementById('button').addEventListener("click", buildString);
+var translatedTextLocation = document.getElementById("translatedText");
 var input = document.getElementById('inputText');
 input.addEventListener('keyup', function (e) {
   var key = e.which || e.keyCode;
@@ -7,6 +8,9 @@ input.addEventListener('keyup', function (e) {
   }
 });
 var select = document.getElementById('select');
+select.addEventListener("change", function (e) {
+  translatedTextLocation.innerHTML = '';
+})
 var stringArray;
 var string;
 
@@ -29,4 +33,5 @@ function splitString (string) {
     {
       Card.translateToItalian(stringArray);
     }
+      else alert("Select a language")
 }

@@ -1,10 +1,5 @@
  var Card = (function() {
 
-    //placing element for the translated text into a variable
-    var translatedTextLocation = document.getElementById("translatedText");
-
-
-
     //return functions posting results to html
     return {
         translate: function(text) {
@@ -12,6 +7,5 @@
             translatedTextLocation.innerHTML += translatedText + ' ';
         }
     }
-
 
 })();
