@@ -6,39 +6,45 @@
 	<title>TRANSLATOR</title>
 	<link rel="stylesheet" href="stylish.css">
 </head>
-<body background="bgimage.jpg">
+<body>
+<div class="container">
+ <h1 class="fonts"><b>SEASON'S GREETINGS TRANSLATOR</b></h1>
 
-<h1 class="mainTitle"><b>SEASON'S GREETINGS TRANSLATOR</b></h1>
+ <article class="fonts item-1">
+ <h3><b><i>"MERRY CHRISTMAS, AND A<br> HAPPY NEW YEAR..."</i></b></h3>
+  <textarea name="textarea" class="textarea" rows="10" cols="50"></textarea>
+ </article>
 
+ <div class="textarea item-2">
+  <div><h3 class="fonts destBackground"><i>SELECT DESTINATION LANGUAGE</i></h3>
+    <select class="dropbox">
+     <option value="Spanish">Spanish</option>
+     <option value="Italian">Italian</option>
+     <option value="Portuguese">Portuguese</option>
+    </select>
+    <button type="button">TRANSLATE</button>
+   </div>
+ </div>
+
+
+
+ <article class="fonts item-3">
+  <h3><b><i>HERE IS YOUR <br>TRANSLATION:</i></b></h3>
+  <textarea name="textarea" class="textarea" rows="10" cols="50"></textarea>
+ </article>
+</div>
 <div>
-<h3><b>ENGLISH</b></h3>
- <textarea rows="2" cols="15">
- </textarea>
-  <button type="button">TRANSLATE</button>
- <h3><b>SPANISH</b></h3>
- <textarea rows="2" cols="15" id="translatedText">
- </textarea>
+ <footer class="fonts">
+	<h1><b>HAVE A SAFE, AND HAPPY HOLIDAY SEASON!</b></h1>
+ </footer>
 </div>
 
-<div>
-<h3><b>ENGLISH</b></h3>
- <textarea rows="2" cols="15">
- </textarea>
-  <button type="button">TRANSLATE</button>
- <h3><b>PORTUGUESE</b></h3>
- <textarea rows="2" cols="15" id="translatedText">
- </textarea>
-</div>
+<script src="DOMhandler.js"></script> 
+<script src="card.js"></script>
+<script src="spanish.js"></script>
+<script src="italian.js"></script>
+<script src="portuguese.js"></script>
 
-<div>
-<h3><b>ENGLISH</b></h3>
- <textarea rows="2" cols="15">
- </textarea>
-  <button type="button">TRANSLATE</button>
- <h3><b>ITALIAN</b></h3>
- <textarea rows="2" cols="15" id="translatedText">
- </textarea>
-</div>
 	
 </body>
 </html>
