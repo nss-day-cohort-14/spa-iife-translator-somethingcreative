@@ -11,7 +11,6 @@ function buildString () {
 
 function splitString (string) {
   stringArray = string.split(' ')
-  console.log("", stringArray);
   if(select.value == "Spanish")
     {
         Card.translateToSpanish(stringArray);

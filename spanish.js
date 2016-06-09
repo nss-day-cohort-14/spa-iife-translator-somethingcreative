@@ -1,6 +1,7 @@
 var Card = (function (spanishCard){
 
-  var spanish = {"merry":"feliz", "christmas":"navidad", "and":"y", "happy":"próspero", "new":"año", "year":"nuevo"};
+  var spanish = {"merry":"feliz", "christmas":"navidad", "and":"y", "a":"un", "happy":"próspero", "new":"año", "year":"nuevo",
+  "Merry":"Feliz", "Christmas":"Navidad", "And":"Y", "A":"Un", "Happy":"Próspero", "New":"Año", "Year":"Nuevo" };
 
   spanishCard.getSpanish = function () {
     return spanish;

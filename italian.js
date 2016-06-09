@@ -3,8 +3,8 @@ var Card = (function(italian) {
     
     //message object with english/portuguese translations
     var message = {
-        Merry: Allegro, Christmas: Natale, and: e, a: un, Happy: Contento, New: Nuovo, Year: Anno
-
+        "merry": "allegro", "christmas": "natale", "and": "e", "a": "un", "happy": "contento", "new": "nuovo", "year": "anno",
+        "Merry": "Allegro", "Christmas": "Natale", "And": "E", "A": "Un", "Happy": "Contento", "New": "Nuovo", "Year": "Anno"
     }
 
      //varaible to store translated text
@@ -16,17 +16,16 @@ var Card = (function(italian) {
              return message;
          };
 
-         //add key values to translatedText
-         italian.addTranslatedText = function() {
-             for (var key in message) {
-                 translatedText += (message[key]) + " ";
-             }
-
-             return translatedText;
-         };
+      italian.translateToItalian = function (array) {
+        text = ''
+        space = " "
+        for (i = 0; i < array.length; i++) {
+          text += message[array[i]] += space;
+        }
+        Card.translate(text);
+      }
 
      return italian;
     
 })(Card);
 
-console.log(Card.translate(Card.addTranslatedText()));
