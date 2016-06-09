@@ -1,7 +1,7 @@
 var button = document.getElementById('button').addEventListener("click", buildString);
 var translatedTextLocation = document.getElementById("translatedText");
 var input = document.getElementById('inputText');
-input.addEventListener('keyup', function (e) {
+window.addEventListener('keyup', function (e) {
   var key = e.which || e.keyCode;
   if (key === 13) { 
     buildString();
