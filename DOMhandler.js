@@ -1,5 +1,11 @@
 var button = document.getElementById('button').addEventListener("click", buildString);
 var input = document.getElementById('inputText');
+input.addEventListener('keyup', function (e) {
+  var key = e.which || e.keyCode;
+  if (key === 13) { 
+    buildString();
+  }
+});
 var select = document.getElementById('select');
 var stringArray;
 var string;
@@ -11,16 +17,16 @@ function buildString () {
 
 function splitString (string) {
   stringArray = string.split(' ')
-  if(select.value == "Spanish")
+  if(select.value === "Spanish")
     {
-        Card.translateToSpanish(stringArray);
+      Card.translateToSpanish(stringArray);
     }
-        if(select.value == "Portuguese")
+      else if (select.value === "Portuguese")
     {
-        Card.translateToPortuguese(stringArray);
+      Card.translateToPortuguese(stringArray);
     }
-        if(select.value == "Italian")
+      else if (select.value === "Italian")
     {
-        Card.translateToItalian(stringArray);
+      Card.translateToItalian(stringArray);
     }
 }

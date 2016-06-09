@@ -32,11 +32,10 @@ var Card = (function(portuguese) {
 	 	//add key values to translatedText
   portuguese.translateToPortuguese = function (array) {
     text = ''
-    space = " "
     for (i = 0; i < array.length; i++) {
-      text += message[array[i]] += space;
+      text = message[array[i]];
+      Card.translate(text);
     }
-    Card.translate(text);
   }
 
 	 return portuguese;
